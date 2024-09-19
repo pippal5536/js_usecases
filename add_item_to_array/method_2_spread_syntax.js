@@ -8,3 +8,5 @@ const addItemInArray = (arr, item) => {
   // Using the spread syntax.
   return [...arr, item];
 };
+
+export { addItemInArray };
