@@ -1,3 +1,4 @@
+import { log_warned_results } from "../log_results.mjs";
 /**
  * Checks if a number is odd or even, or if the input is not a number.
  * @param {*} num - The value to be checked.
@@ -6,7 +7,7 @@
 
 const checkOddEvenNaN = (num = 1) => {
   if (isNaN(num) || typeof num !== "number") {
-    return "Not a number my G";
+    return log_warned_results("Thats not a number my G");
   }
   return num % 2 === 0 ? "Even" : "Odd";
 };

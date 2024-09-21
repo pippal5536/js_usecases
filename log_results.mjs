@@ -7,9 +7,11 @@
  */
 
 const log_results = (result, name = "Result", optional = "") => {
-  console.log(`${name} : ${result}`);
+  console.log("              __|-Debugging-|__");
+  console.log("---------------------------------------------------");
+  console.log({ [name]: result });
   console.log(optional);
-  console.log("\n");
+  console.log("---------------------------------------------------");
 };
 
 export { log_results };
